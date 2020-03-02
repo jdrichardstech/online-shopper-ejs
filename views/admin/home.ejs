@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    body{
+     height:100%;
+      background:url('/images/products/dashboard.jpg')
+    }
+  </style>
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <% include ../partials/navbar %>
+  <div style="margin-top:200px;" class="container-fluid my-dashboard">
+    <div class="row">
+        <div class="jumbotron my-dashboard">
+            <h1>Welcome to the Admin page</h1>
+            <div class="my-dashboard">Hello <span> <%=user.profile.name.toUpperCase()%></span></div>
+        </div>
+    </div>
+</div>  
+<% include ../partials/scripts %>
+</body>
+</html>
+
+

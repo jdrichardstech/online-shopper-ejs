@@ -1,0 +1,13 @@
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('main/home', { name: 'JD', item: 'cloths', amount: 50 });
+});
+
+router.get('/signup', function(req, res, next) {
+  res.render('auth/signup');
+});
+
+module.exports = router;
